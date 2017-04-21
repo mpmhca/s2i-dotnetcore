@@ -34,7 +34,7 @@ namespace SampleApp
                 Console.WriteLine($"Peer: {connectionFeature.RemoteIpAddress?.ToString()} {connectionFeature.RemotePort}");
                 Console.WriteLine($"Sock: {connectionFeature.LocalIpAddress?.ToString()} {connectionFeature.LocalPort}");
 
-                context.Response.ContentLength = 11;
+                context.Response.ContentLength = 27;
                 context.Response.ContentType = "text/plain";
                 await context.Response.WriteAsync("Hello world!! This is test.");
             });
