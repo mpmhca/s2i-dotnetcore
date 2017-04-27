@@ -37,7 +37,7 @@ namespace SampleApp
                 //context.Response.ContentLength = 27;
                 context.Response.ContentType = "text/html";
                 var htm = "<h1>Hello world!!</h1> <p>This site is a .Net Core web app running in OpenShift</p>";
-                htm = htm + "<div><object type=\"text/html\" data=\"http://validator.w3.org/\" width=\"800px\" height=\"600px\" style=\"overflow:auto;border:5px ridge blue\"></object></div>";
+                htm = htm + "<div><object type=\"text/html\" data=\"http://hcahealthcare.com//\" width=\"800px\" height=\"600px\" style=\"overflow:auto;border:5px ridge blue\"></object></div>";
                 await context.Response.WriteAsync(htm);
             });
         }
