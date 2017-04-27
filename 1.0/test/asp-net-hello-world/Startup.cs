@@ -35,8 +35,8 @@ namespace SampleApp
                 Console.WriteLine($"Sock: {connectionFeature.LocalIpAddress?.ToString()} {connectionFeature.LocalPort}");
 
                 //context.Response.ContentLength = 27;
-                context.Response.ContentType = "text/plain";
-                await context.Response.WriteAsync("<h1>Hello world!!</h> <p>This site is a .Net Core web app running in OpenShift</p>");
+                context.Response.ContentType = "text/html";
+                await context.Response.WriteAsync("<h1>Hello world!!</h1> <p>This site is a .Net Core web app running in OpenShift</p>");
             });
         }
 
